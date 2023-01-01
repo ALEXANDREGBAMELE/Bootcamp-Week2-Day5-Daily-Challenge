@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini projet week 2</title>
+</head>
+<body>
+    <script>
+        
+        /**
+        *@author: Alexandre Gbamélé
+
+        *@description :gestion des bouteille en se basant sur la chanson
+                       de 99 bouteilles prenez-en et passez autre 
+
+        *date 01-01-23
+        
+        */
+
+        // deamder le nombre de bouteille au clavier a l'utilisateur
+        
+       let  nbreBouteille = prompt("Entrer les nombres de bouteilles")
+        nbreBouteille = parseInt(nbreBouteille)
+        let cpt = 0 ;
+
+        //console.log(nbreBouteille)
+        while(nbreBouteille >= 0)
+        {
+            if( nbreBouteille > 1) {terminaison = "s"} else {terminaison = ""}
+            if( nbreBouteille === 0) {
+                console.log(`${nbreBouteille} bouteille${terminaison} de biere au mur `)
+                break
+            }
+            else{
+                console.log(`${nbreBouteille} bouteille${terminaison} de biere au mur `)
+                console.log(`${nbreBouteille} bouteille${terminaison} de biere `)
+                console.log(`prenez-en ${cpt + 1} , passez la autoure de vous `)
+                console.log(`${nbreBouteille --} bouteilles de biere \n`)
+                console.log(`                                               \n`)
+                cpt = cpt + 1;
+            }
+            
+        }
+
+
+        const titleSentence = "bouteille de biere"
+    </script>
+</body>
+</html>
